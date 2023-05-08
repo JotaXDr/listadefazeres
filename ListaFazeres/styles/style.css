@@ -1,0 +1,141 @@
+*{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+} 
+
+
+body {
+  background-image: url('/img/pexels-arnie-chou-1229042.jpg');
+  animation: slide 20s ease infinite alternate;
+  background-size: 200%;
+}
+
+@keyframes slide {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+#texto-inicio {
+  font-size: 35px;
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+ol {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li:hover {
+  background-color: #eee;
+}
+
+li.checked {
+  text-decoration: line-through;
+  color: #888;
+  display: block;
+}
+
+.close {
+  float: right;
+  font-weight: bold;
+  color: #f44336;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.button input{
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+label {
+  color: white;
+  font-size: 25px;
+}
+
+#tarefa{
+  font-size: 17px;
+}
+
+button{
+  font-size: 17px;
+  background-color: gray;
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* Estilos para telas menores que 768px */
+  ol {
+    max-width: 100%;
+    font-size: 18px;
+  }
+  
+  li {
+    font-size: 18px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  #tarefa{
+    font-size: 15px;
+  }
+  
+  button{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para telas menores que 480px */
+  #texto-inicio {
+    font-size: 25px;
+  }
+  
+  ol {
+    font-size: 16px;
+  }
+  
+  li {
+    font-size: 16px;
+  }
+  
+  label {
+    font-size: 18px;
+  }
+  
+  #tarefa{
+    font-size: 13px;
+  }
+  
+  button{
+    font-size: 13px;
+  }
+}
